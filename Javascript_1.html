@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function display(min, max) {
+	var text = "";
+	var i = 0;
+	for (i = min; i <= max; i++) 
+	{
+		//Checking divisibility by 3
+		if (i % 3 == 0 && i % 4 != 0) 
+		{
+			document.write("Insite <br>");
+		}
+		//Checking divisibility by 4
+		else if (i % 3 != 0 && i % 4 == 0)
+		{
+			document.write("Logic <br>");
+		}
+		//Checking divisibility by both 3 and 4
+		else if (i % 3 == 0 && i % 4 == 0)
+		{
+			document.write("Insite Logic <br>");
+		}
+		else
+		{
+			document.write(i + "<br>");
+		}
+	}
+	
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+display(15, 140);
+</script>
+
+</body>
+</html>
